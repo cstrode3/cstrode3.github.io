@@ -1,3 +1,41 @@
-html {
-  
+body {
+  margin: 0px; /* Moves all the content to the edge of the page */
+  padding: 1%; /* Prevents the content from touching the edge of the page */
+  background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
+}
+header{
+  width: 65vw;
+  background-color: black; /* Gives the header a black background */
+  border: 3px solid lime; /* Creates a box around the header */
+  border-radius: 15px; /* Rounds the edges of the header box */
+  padding: 10px; /* Prevents the contents of the header from contacting the headr box */
+}
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Sets the font of the largest header depending on what fonts the user has installed */
+  color: black; /* Sets the the color of the header text to black */
+  -webkit-text-stroke: 0.002px lime; /* Gives the header text a lime border to make it visible */
+  margin-top: 0px; /* Moves the header text closer to the top of the headerbox */
+}
+p {
+  font-family: 'Courier New', Courier, monospace; /* Sets the font of all paragraphs depending on what fonts the user has installed */
+  color: lime; /* Sets the color of the text in all the paragraphs to lime */
+}
+hr {
+  height: 5px; /* Sets the size of all horizontal lines */
+  border-width: 0px; /* Removes the border around all horizontal lines */
+  background-image: radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.05), rgba(0, 255, 0, 0)); /* Sets the color and describes the shape of all horizontal lines */
+}
+iframe {
+  height: 30vh; /* Sets the height of all iframes */
+  width: 60vw; /* Sets the width of all iframes */
+  border: 2px solid black; /* Creates a box around all iframes */
+  border-radius: 15px; /* Rounds the edges of the iframe boxes */
+  }
+footer {
+  font-style: italic; /* Makes all footers italic */
+  color: white; /* Makes the text of all footers white */
+  border: 1px solid white; /* Creates a white box around all footers */
+  margin-top: 10px; /* Moves footer box further away from preceeding content */
+  border-radius: 3px; /* Rounnds the edges of all footer boxes */
+  background-color: gray; /* Makes all footer boxes gray */
 }

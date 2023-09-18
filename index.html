@@ -1,49 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Comment template-->
+<!-- HTML Comment template -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>My github Site</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <!-- Designs the look of the entire webpage. -->
     <style>
-      body { <!-- Since the entire webpage exists within the body element, this decides the look of the background behind all the elements it contains. -->;
-        background-image: linear-gradient(white, black); <!--Creates the gradient in the background, which stretches the entire length of the webpage.-->;
-      }
-      header{ <!-- Designs the header you see at the top of the page. -->;
-        background-color: black; <!-- Creates black background. -->;
-        border-radius: 15px; <!-- Rounds the edges of the header box. -->;
-        border: 3px solid lime; <!-- Creates the box that the header sits in. -->;
-        padding: 10px; <!-- Prevents the test inside the header from coliding with the edges of the header box. -->;
-      }
-      h1 { <!-- Styles my name at the top of the header box -->;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; <!-- Decides the font of my name, based on what fonts the user has installed. -->;
-        color: black; <!-- Gives the letters of me name a black core. -->;
-        -webkit-text-stroke: 0.002px lime; <!-- Gives the letters of my name a green outer border. -->;
-        margin-top: 0px; <!-- Moves my name closer to the top of the header box. -->;
-      }
-      p { <!-- Designs all the paragraphs on the page. -->;
-        font-family: 'Courier New', Courier, monospace; <!-- Decides the font of each paragraph in the page. -->;
-        color: lime; <!-- sets the text color of the paragraph. -->;
-      }
-      hr { <!-- Styles the horihontal line at the bottom of the header box. -->;
-        height: 5px; <!-- Defines the height of the horizontal line in pixels. -->;
-        border-width: 0px; <!-- Removes the border around the horizonal line. -->;
-        background-image: radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.05), rgba(0, 255, 0, 0)); <!-- Gives the horizontal line its color, as well as its shape. -->;
-      }
-      iframe { <!-- Gives all of the preview windows a box. -->;
-        border-radius: 15px; <!-- Rounds the box's edges. -->;
-        border: 2px solid black; <!-- Makes the box exist. -->;
-      }
-      footer { <!-- Styles footer at the bottom of the page -->;
-        font-style: italic; <!-- Makes text in footer italic-->;
-        color: white; <!-- Makes footer text white. -->;
-        border: 1px solid white; <!-- Gives footer a white box. -->;
-        margin-top: 10px; <!-- Sepertes the footer from the rest of the page. -->;
-        border-radius: 3px; <!-- Rounds footer box. -->;
-        background-color: gray; <!-- Colors footer box. -->;
-      }
+      /* CSS Comment template */
     </style>
   </head>
   
@@ -54,17 +18,17 @@
       <hr><!--Creates a horizontal line-->
     </header>
     
-    <main>
-      <ol>
-        <li><a href="unit1/index.html">Unit 1 Project</a><iframe src="unit1/index.html" name="Project 1" title="Project 1" style="height: 225px; width: 700px;"></iframe></li>
-        <li><a href="unit2/index.html">Unit 2 Project</a><iframe src="unit2/index.html" name="Project 2" title="Project 2" style="height: 225px; width: 700px;"></iframe></li>
-        <li><a href="unit3/index.html">Unit 3 Project</a><iframe src="unit3/index.html" name="Project 3" title="Project 3" style="height: 225px; width: 700px;"></iframe></li>
-        <li><a href="unit4/index.html">Unit 4 Project</a><iframe src="unit4/index.html" name="Project 4" title="Project 4" style="height: 225px; width: 700px;"></iframe></li>
+    <main> <!-- Defines the main content of the page -->
+      <ol> <!-- Formats all the links into an ordered list -->
+        <li><a href="unit1/index.html">Unit 1 Project</a><br><iframe src="unit1/index.html" name="Project 1" title="Project 1"></iframe></li> <!-- Shows a preview of project 1 -->
+        <li><a href="unit2/index.html">Unit 2 Project</a><br><iframe src="unit2/index.html" name="Project 2" title="Project 2"></iframe></li> <!-- Shows a preview of project 2 -->
+        <li><a href="unit3/index.html">Unit 3 Project</a><br><iframe src="unit3/index.html" name="Project 3" title="Project 3"></iframe></li> <!-- Shows a preview of project 3 -->
+        <li><a href="unit4/index.html">Unit 4 Project</a><br><iframe src="unit4/index.html" name="Project 4" title="Project 4"></iframe></li> <!-- Shows a preview of project 4 -->
       </ol>
     </main>
     
     <footer>
-      &copy; 2023 Celestia Strode
+      &copy; 2023 Celestia Strode <!-- Shows a copyright box at the bottom of the page -->
     </footer>
   </body>
 
