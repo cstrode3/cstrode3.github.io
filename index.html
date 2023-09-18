@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Comment template-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>My github Site</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Designs the look of the entire webpage. -->
     <style>
-      header{
-        background-color: gray;
-        border-radius: 15px;
-        border: 3px solid black;
-        padding: 10px;
+      body { <!-- Since the entire webpage exists within the body element, this decides the look of the background behind all the elements it contains. -->;
+        background-image: linear-gradient(white, black); <!--Creates the gradient in the background, which stretches the entire length of the webpage.-->;
       }
-      body {
-        background-image: linear-gradient(white, black)
+      header{ <!-- Designs the header you see at the top of the page. -->;
+        background-color: black; <!-- Creates black background. -->;
+        border-radius: 15px; <!-- Rounds the edges of the header box. -->;
+        border: 3px solid lime; <!-- Creates the box that the header sits in. -->;
+        padding: 10px; <!-- Prevents the test inside the header from coliding with the edges of the header box. -->;
       }
-      h1 {
-        font-family: 'Times New Roman', Times, serif;
-        color: white;
-        -webkit-text-stroke: 1px black;
-        margin-top: 0px;
+      h1 { <!-- Styles my name at the top of the header box -->;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; <!-- Decides the font of my name, based on what fonts the user has installed. -->;
+        color: black; <!-- Gives the letters of me name a black core. -->;
+        -webkit-text-stroke: 0.002px lime; <!-- Gives the letters of my name a green outer border. -->;
+        margin-top: 0px; <!-- Moves my name closer to the top of the header box. -->;
       }
-      hr {
-        height: 5px;
-        border-width: 0px;
-        background-image: radial-gradient(rgba(255, 0, 0, 1), rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.05), rgba(255, 0, 0, 0));
+      p { <!-- Designs all the paragraphs on the page. -->;
+        font-family: 'Courier New', Courier, monospace; <!-- Decides the font of each paragraph in the page. -->;
+        color: lime; <!-- sets the text color of the paragraph. -->;
       }
-      footer {
-        font-style: italic;
-        color: white;
-        border: 1px solid white;
-        margin-top: 10px;
-        border-radius: 3px;
-        background-color: gray;
+      hr { <!-- Styles the horihontal line at the bottom of the header box. -->;
+        height: 5px; <!-- Defines the height of the horizontal line in pixels. -->;
+        border-width: 0px; <!-- Removes the border around the horizonal line. -->;
+        background-image: radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.05), rgba(0, 255, 0, 0)); <!-- Gives the horizontal line its color, as well as its shape. -->;
+      }
+      iframe { <!-- Gives all of the preview windows a box. -->;
+        border-radius: 15px; <!-- Rounds the box's edges. -->;
+        border: 2px solid black; <!-- Makes the box exist. -->;
+      }
+      footer { <!-- Styles footer at the bottom of the page -->;
+        font-style: italic; <!-- Makes text in footer italic-->;
+        color: white; <!-- Makes footer text white. -->;
+        border: 1px solid white; <!-- Gives footer a white box. -->;
+        margin-top: 10px; <!-- Sepertes the footer from the rest of the page. -->;
+        border-radius: 3px; <!-- Rounds footer box. -->;
+        background-color: gray; <!-- Colors footer box. -->;
       }
     </style>
   </head>
   
   <body>
-    <header>
-      <h1>Celestia Strode</h1>
-      <p>Hello, and welcome to my project directory! I hope to maintain continous refinement to this repository of previous work, and maybe add some more experimental projects to the selection for you to look throough.</p>
-      <hr>
+    <header> <!--Displays my name and a description of the page near the top of the page-->
+      <h1>Celestia Strode</h1> <!--Provides my name as text and marks it as the largest heading type-->
+      <p>Hello, and welcome to my project directory! I plan to maintain continous refinement to this repository of previous work, and maybe add some more experimental projects to the selection for you to look through.</p><!--Displays explanation text to user-->
+      <hr><!--Creates a horizontal line-->
     </header>
     
     <main>
