@@ -28,6 +28,7 @@ hr {
 iframe {
   height: 30vh; /* Sets the height of all iframes */
   width: 60vw; /* Sets the width of all iframes */
+  background-color: white;
   border: 2px solid black; /* Creates a box around all iframes */
   border-radius: 15px; /* Rounds the edges of the iframe boxes */
   }
