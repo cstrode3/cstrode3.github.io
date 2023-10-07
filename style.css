@@ -1,9 +1,10 @@
 body {
-  margin: 0px; /* Moves all the content to the edge of the page */
-  padding: 1%; /* Prevents the content from touching the edge of the page */
+  margin: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
+  min-width: 450px; /* Settings I changed to make it look good */
 }
 header{
+  margin: 1vh 1vw;
   width: 65vw;
   background-color: black; /* Gives the header a black background */
   border: 3px solid lime; /* Creates a box around the header */
@@ -25,18 +26,78 @@ hr {
   border-width: 0px; /* Removes the border around all horizontal lines */
   background-image: radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.05), rgba(0, 255, 0, 0)); /* Sets the color and describes the shape of all horizontal lines */
 }
+nav {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: black;
+  border: 1px solid lime;
+}
+span {
+  color: lime;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid lime;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 21vw;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+a {
+  color: lime;
+  text-decoration: none;
+  border: 1px solid lime;
+  border-radius: 5px;
+  padding: 5px;
+}
+div a {
+  border-radius: 0px;
+  padding: 1vh 2vw;
+  margin: auto;
+}
+nav div {
+  border-radius: 0px;
+  padding: 1vh 2vw;
+  margin: auto;
+}
+a:link {
+  background-color: black;
+}
+a:visited {
+  background-color: black;
+}
+a:hover {
+  background-color: gray;
+}
+a:active {
+  background-color: white;
+}
 iframe {
   height: 30vh; /* Sets the height of all iframes */
   width: 60vw; /* Sets the width of all iframes */
   background-color: white;
   border: 2px solid black; /* Creates a box around all iframes */
   border-radius: 15px; /* Rounds the edges of the iframe boxes */
+  margin: 2vh 0px;
   }
 footer {
   font-style: italic; /* Makes all footers italic */
-  color: white; /* Makes the text of all footers white */
-  border: 1px solid white; /* Creates a white box around all footers */
-  margin-top: 10px; /* Moves footer box further away from preceeding content */
+  color: lime; /* Makes the text of all footers lime green */
+  border: 1px solid lime; /* Creates a green box around all footers */
+  margin: 10px; /* Moves footer box further away from surrounding elements */
   border-radius: 3px; /* Rounnds the edges of all footer boxes */
-  background-color: gray; /* Makes all footer boxes gray */
+  background-color: black; /* Makes all footer boxes black */
+  padding: 5px;
 }
