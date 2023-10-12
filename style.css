@@ -24,7 +24,7 @@ p {
 hr {
   height: 5px; /* Sets the size of all horizontal lines */
   border-width: 0px; /* Removes the border around all horizontal lines */
-  background-image: radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.05), rgba(0, 255, 0, 0)); /* Sets the color and describes the shape of all horizontal lines */
+  background-image: radial-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 1), rgba(0, 255, 0, 0.01), rgba(0, 255, 0, 0)); /* Sets the color and describes the shape of all horizontal lines */
 }
 nav {
   position: sticky;
