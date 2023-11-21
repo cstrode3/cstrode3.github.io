@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
-  min-width: 450px; /* Settings I changed to make it look good */
 }
 
 header{
@@ -84,10 +83,13 @@ li > p:hover {
   width: max-content;
 }
 #U7 {
-  right: 10%;
+  right: 20.5%;
 }
 #U9 {
-  right: -7%;
+  right: 6%;
+}
+#U10 {
+  right: -6%;
 }
 .sub > ul > li {
   padding: 1vh 0vw;
@@ -139,6 +141,39 @@ iframe {
   border-radius: 15px; /* Rounds the edges of the iframe boxes */
   margin: 2vh 0px;
   }
+
+
+/* Unit 10 Material */
+.gray {
+  background-image: none;
+  background-color: gray;
+}
+table, th, td {
+  border: 1px solid lime;
+  border-collapse: collapse;
+  color: lime;
+  padding: 1vh 2vw;
+}
+table {
+  width: 80%;
+  background-color: black;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+}
+th {
+  height: 50px;
+  width: 100px;
+  font-size: 1.5em;
+}
+td {
+  height: 2vh;
+  text-align: center;
+}
+tr:hover {
+  background-color: gray;
+}
+/* End Unit 10 Material */
 
 
 footer {
