@@ -13,7 +13,7 @@ header{
 }
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Sets the font of the largest header depending on what fonts the user has installed */
-  color: black; /* Sets the the color of the header text to black */
+  color: transparent; /* Sets the the color of the header text to black */
   -webkit-text-stroke: 1px lime; /* Gives the header text a lime border to make it visible */
   margin: 0px; /* Moves the header text farther from the headerbox */
 }
