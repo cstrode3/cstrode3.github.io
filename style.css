@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
 }
@@ -164,15 +164,54 @@ table {
 th {
   height: 50px;
   width: 100px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 td {
   height: 2vh;
   text-align: center;
+  font-size: 1.25em;
 }
 tr:hover {
   background-color: gray;
 }
+#alternating tr:nth-child(odd) {
+  background-color: #CCCCCC;
+}
+#alternating, #alternating td {
+  border: 0px solid lime;
+}
+#alternating td {
+  color: black;
+}
+#alternating tr:nth-child(even) {
+  background-color: white;
+}
+.container {
+  padding: 3vh 0vw;
+}
+.container > a {
+  border-radius: 5px;
+}
+.blank:hover {
+  background-color: transparent;
+}
+td > img {
+  height: 200px;
+  width: 200px;
+}
+/* .wide {
+  width: 175px;
+}
+.tall {
+  width: 75px;
+}
+.square {
+  width: 100px;
+} 
+.big {
+  height: 300px;
+  width: 300px;
+} */
 /* End Unit 10 Material */
 
 
@@ -185,3 +224,7 @@ footer {
   background-color: black; /* Makes all footer boxes black */
   padding: 5px;
 }
+/* footer > span:after {
+  content: "I Don't Wanna Think About Toad's Dick";
+  margin-left: 20px;
+} */
