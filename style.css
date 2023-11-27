@@ -1,6 +1,8 @@
  body {
   margin: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
+   min-height: 300px;
+   min-width: 550px;
 }
 
 header{
@@ -31,11 +33,17 @@ hr {
 
 nav {
   position: sticky;
-  top: 0;
+  top: 0px;
   text-align: center;
 }
 .nav-bar {
   display: flex;
+}
+.surface {
+  position: sticky;
+  top: 1px;
+  padding: 0.95vh 2vw;
+  display: block;
 }
 .nav-bar::before {
   display: inline-block;
@@ -46,7 +54,7 @@ nav {
   align-content: flex-start;
   content: "";
   background: url(/files/images/LLC-Wordmark.png) no-repeat;
-  filter: sepia(100%) saturate(1200%) brightness(900%) hue-rotate(50deg);
+  filter: sepia(100%) saturate(1200%) brightness(900%) hue-rotate(42deg);
   background-size: 100%;
 }
 ul {
@@ -69,13 +77,19 @@ li > p:hover {
 .menu > ul {
   display: none;
   position: absolute;
+  padding: 4px 0px 3px;
 }
 .menu:hover > ul {
   display: flex;
+  padding: 1vh 0vw;
 }
 
 .sub {
   margin-top: -1.1vh;
+}
+#level2 {
+  padding-bottom: 0px;
+  top: 191%;
 }
 .sub > ul {
   display: none;
@@ -83,13 +97,13 @@ li > p:hover {
   width: max-content;
 }
 #U7 {
-  right: 20.5%;
+  right: 61.6%;
 }
 #U9 {
-  right: 6%;
+  right: 16%;
 }
 #U10 {
-  right: -6%;
+  right: -20%;
 }
 .sub > ul > li {
   padding: 1vh 0vw;
