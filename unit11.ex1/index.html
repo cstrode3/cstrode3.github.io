@@ -63,83 +63,55 @@
     </nav>
 
     <main>
-      <table>
-        <tr>
-          <th colspan="2">My Favorite World Events</th>
-        </tr>
-        <tr>
-          <td>Birth of Alexander the Great</td>
-          <td>356 BC</td>
-        </tr>
-        <tr>
-          <td>Prose Edda was Written</td>
-          <td>Early 13th Century</td>
-        </tr>
-        <tr>
-          <td>Bridget was confirmed as a trans chacter</td>
-          <td>2022</td>
-        </tr>
-      </table>
-      
-      <table>
-        <thead>
-          <tr>
-            <th>Course Number</th>
-            <th>Course Name</th>
-            <th>Instructor</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CIS-049-54951-2023FA</td>
-            <td>Content Managment Sysytems-54951</td>
-            <td>Tynia Kessler</td>
-          </tr>
-          <tr>
-            <td>CIS-066-10192-2023FA</td>
-            <td>Digital Video Production-10192</td>
-            <td>Scott Rhine</td>
-          </tr>
-          <tr>
-            <td>CIS-099-43950-2023FA</td>
-            <td>Introduction to Web Technology-43950</td>
-            <td>Dustin Mason</td>
-          </tr>
-          <tr>
-            <td>COM-180-51226-2023FA</td>
-            <td>Basic TV Production-51226</td>
-            <td>Edward Thomas</td>
-          </tr>
-          <tr>
-            <td>ITT-048-15879-2023FA</td>
-            <td>IT Digital Media Cert Intern-15879</td>
-            <td>Scott Rhine</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table id="alternating">
-        <tr>
-          <td>Your Only Move is Hustle</td>
-          <td>A turn based fighting game.</td>
-        </tr>
-        <tr>
-          <td>Deep Rock Galactic</td>
-          <td>A game about dwarves fighting aliens in space while mining a hostile planet for rare resources.</td>
-        </tr>
-        <tr>
-          <td>Divinity Original Sin II</td>
-          <td>A turn based strategy role playing game.</td>
-        </tr>
-        <tr>
-          <td>Shrek</td>
-          <td>The greatest movie ever made, and you know it.</td>
-        </tr>
-        <tr>
-          <td>The Princess Bride</td>
-          <td>Runner-up for best movie ever made.</td>
-        </tr>
-      </table>
+      <form>
+        <h1>Music Survey</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="usr-name"><br>
+        <label for="email">E-Mail:</label><br>
+        <input type="email" id="email" name="usr-email">
+        <br>
+        <fieldset>
+          <legend>Select Your Favorite Types of Music:</legend>
+          <input type="checkbox" id="pop" name="fav-music" value="Pop">
+          <label for="pop">Pop</label><br>
+          <input type="checkbox" id="classical" name="fav-music" value="Classical">
+          <label for="classical">Classical</label><br>
+          <input type="checkbox" id="rock" name="fav-music" value="Rock">
+          <label for="rock">Rock</label><br>
+          <input type="checkbox" id="folk" name="fav-music" value="Folk">
+          <label for="folk">Folk</label><br>
+          <input type="checkbox" id="rap" name="fav-music" value="Rap">
+          <label for="rap">Rap</label><br>
+          <input type="checkbox" id="other" name="fav-music" value="Other">
+          <label for="other">Other</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Select how often you purchase Music CDs:</legend>
+          <input type="radio" id="weekly" name="buy-freq" value="Weekly">
+          <label for="weekly">Weekly</label><br>
+          <input type="radio" id="x per year" name="buy-freq" value="x per year">
+          <label for="x per year">A few CDs each year</label><br>
+          <input type="radio" id="monthly" name="buy-freq" value="Monthly">
+          <label for="monthly">Monthly</label><br>
+          <input type="radio" id="never" name="buy-freq" value="Never">
+          <label for="never">Never purchase</label><br>
+        </fieldset>
+        <label for="locations">Select the locations you listen to Music:</label>
+        <br>
+        <select id="locations" name="locations" size="3">
+          <option value="home">At home</option>
+          <option value="car">In the car</option>
+          <option value="anywhere">Anywhere (MP3 Player)</option>
+          <option value="concert">Only at Live Concerts</option>
+        </select>
+        <br>
+        <label for="role">What role does music play in your life?</label>
+        <br>
+        <textarea id="role" name="role" rows="3" cols="60"></textarea>
+        <br><input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
     </main>
 
     <footer>

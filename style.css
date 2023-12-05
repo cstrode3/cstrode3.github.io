@@ -1,11 +1,11 @@
  body {
   margin: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
-   min-height: 300px;
+   min-height: 100vh;
    min-width: 550px;
 }
 
-header{
+header, .bye {
   margin: 1vh 1vw;
   width: 65vw;
   background-color: black; /* Gives the header a black background */
@@ -97,13 +97,16 @@ li > p:hover {
   width: max-content;
 }
 #U7 {
-  right: 61.6%;
+  right: 71%;
 }
 #U9 {
-  right: 16%;
+  right: 38%;
 }
 #U10 {
-  right: -20%;
+  right: 12%;
+}
+#U11 {
+  right: -14%;
 }
 .sub > ul > li {
   padding: 1vh 0vw;
@@ -158,10 +161,6 @@ iframe {
 
 
 /* Unit 10 Material */
-.gray {
-  background-image: none;
-  background-color: gray;
-}
 table, th, td {
   border: 1px solid lime;
   border-collapse: collapse;
@@ -227,6 +226,29 @@ td > img {
   width: 300px;
 } */
 /* End Unit 10 Material */
+
+
+/* Unit 11 Material */
+form {
+  background-color: black;
+  border: 1px solid lime;
+  border-radius: 15px;
+  color: lime;
+  margin: 2vh 2vw;
+  padding: 2vh 2vw;
+  font-family: 'Courier New', Courier, monospace;
+}
+.shipping {
+  text-align: right;
+  width: 352px;
+}
+.shipping > legend {
+  text-align: left;
+}
+fieldset {
+  display: inline-block;
+}
+/* End Unit 11 Material */
 
 
 footer {

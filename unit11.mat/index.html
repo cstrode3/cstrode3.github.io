@@ -59,32 +59,40 @@
             </li>
           </ul>
         </li>
-        <li><a href="/unit10/index.html" class="surface">Unit 10</a></li>
       </ul>
     </nav>
 
     <main>
-      <table>
-        <tr>
-          <th colspan="6">My Favorite Show</th>
-        </tr>
-        <tr>
-          <td>Title</td>
-          <td>Director</td>
-          <td>Leading Actor</td>
-          <td>Rating</td>
-          <td>Description</td>
-          <td>Link</td>
-        </tr>
-        <tr class="blank">
-          <td>Last Week Tonight with John Oliver</td>
-          <td>Paul Pennolino</td>
-          <td>John Oliver</td>
-          <td>TV-MA</td>
-          <td>Weekly News Satire Program</td>
-          <td class="container"><a href="https://www.npr.org/2023/02/21/1158493782/now-in-its-10th-season-john-olivers-last-week-is-still-as-fresh-and-funny-as-eve">Link</a></td>
-        </tr>
-      </table>
+      <form>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="usr-name">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="usr-email"><br><br>
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="usr-phone">
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Favorite Food</legend>
+          <input type="radio" id="mexican" name="fav-food" value="Mexican">
+          <label for="mexican">Mexican</label>
+          <input type="radio" id="italian" name="fav-food" value="Italian">
+          <label for="italian">Italian</label>
+          <input type="radio" id="thai" name="fav-food" value="Thai Food">
+          <label for="thai">Thai Food</label>
+          <input type="radio" id="sandwiches" name="fav-food" value="Sandwiches">
+          <label for="sandwiches">Sandwiches</label>
+          <input type="radio" id="salad" name="fav-food" value="Salad">
+          <label for="salad">Salad</label>
+        </fieldset>
+        <br>
+        <input type="checkbox" id="tos" name="" value="I have read and understand the Terms of Use">
+        <label for="tos">I have read and understand the Terms of Use</label>
+        <input type="submit" value="Submit">
+      </form>
+      <br>
     </main>
 
     <footer>
