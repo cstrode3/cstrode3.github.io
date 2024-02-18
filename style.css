@@ -1,8 +1,13 @@
- body {
+body {
   margin: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
+  height: 100%;
    min-height: 100vh;
-   min-width: 550px;
+  width: 100%;
+   min-width: 600px;
+}
+main {
+  margin-top: 2em;
 }
 
 header, .bye {
@@ -33,29 +38,25 @@ hr {
 
 nav {
   position: sticky;
-  top: 0px;
   text-align: center;
 }
-.nav-bar {
+.nav-drop {
   display: flex;
+  align-items: center;
 }
 .surface {
   position: sticky;
-  top: 1px;
-  padding: 0.95vh 2vw;
+  padding: 1em 2vw;
   display: block;
 }
-.nav-bar::before {
+.nav-drop::before {
   display: inline-block;
-  height: 4vh;
-  width: 6vw;
-  min-height: 1.5em;
-  min-width: 4.25em;
-  align-content: flex-start;
+  height: 3em;
+  width: 7em;
   content: "";
-  background: url(/files/images/LLC-Wordmark.png) no-repeat;
+  background: url(/school/files/images/LLC-Wordmark.png) no-repeat;
   filter: sepia(100%) saturate(1200%) brightness(900%) hue-rotate(42deg);
-  background-size: 100%;
+  background-size: cover;
 }
 ul {
   padding: 0px;
@@ -66,7 +67,7 @@ ul {
 }
 li > p {
   margin: auto;
-  padding: 0.95vh 2vw;
+  padding: 1em 2vw;
   font-family: serif;
   border: 1px solid lime;
 }
@@ -78,10 +79,11 @@ li > p:hover {
   display: none;
   position: absolute;
   padding: 4px 0px 3px;
+  top: 50px;
 }
 .menu:hover > ul {
   display: flex;
-  padding: 1vh 0vw;
+  padding: 4px 0px 3px;
 }
 
 .sub {
@@ -89,12 +91,15 @@ li > p:hover {
 }
 #level2 {
   padding-bottom: 0px;
-  top: 191%;
+  top: 225%;
 }
 .sub > ul {
   display: none;
   position: absolute;
   width: max-content;
+}
+#codeDrawing {
+  left: 0%;
 }
 #U7 {
   right: 71%;
@@ -109,12 +114,13 @@ li > p:hover {
   right: -14%;
 }
 .sub > ul > li {
-  padding: 1vh 0vw;
+  padding: 1em 0vw;
   margin: 1vh 1vw;
   position: relative;
 }
 .sub:hover > ul {
   display: block;
+  top: 200%;
 }
 
 
@@ -132,7 +138,7 @@ a {
   text-decoration: none;
   color: lime;
   border: 1px solid lime;
-  padding: 1vh 2vw;
+  padding: 1em 2vw;
   margin: auto;
 }
 ol > li > a {
@@ -156,6 +162,19 @@ iframe {
   background-color: white;
   border: 2px solid black; /* Creates a box around all iframes */
   border-radius: 15px; /* Rounds the edges of the iframe boxes */
+  margin: 2em 0px;
+  }
+.window {
+  display: inline-block;
+  margin: 1% 3%;
+}
+.viewBox {
+  height: 50vh; /* Sets the height of all iframes */
+  width: 40vw; /* Sets the width of all iframes */
+  background-color: white;
+  border: 2px solid black; /* Creates a box around all iframes */
+  border-radius: 15px; /* Rounds the edges of the iframe boxes */
+  display: flex;
   margin: 2vh 0px;
   }
 
@@ -250,6 +269,13 @@ fieldset {
 }
 /* End Unit 11 Material */
 
+/* polyrhythms css */
+#paper {
+  height: 100vh;
+  width: 100vw;
+}
+/* end polyrhythms css */
+
 
 footer {
   font-style: italic; /* Makes all footers italic */
@@ -264,3 +290,9 @@ footer {
   content: "I Don't Wanna Think About Toad's Dick";
   margin-left: 20px;
 } */
+
+@media only screen and (max-height: 700px) {
+  #level2 {
+    top: 215%;
+  }
+}
