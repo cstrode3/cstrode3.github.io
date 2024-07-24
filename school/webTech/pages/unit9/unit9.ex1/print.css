@@ -1,0 +1,28 @@
+* {
+  color: black;
+  background-color: white;
+}
+
+body {
+  font-size: 1.25em;
+}
+
+
+#nav {
+  display: none;
+}
+#sidebar {
+  display: none;
+}
+img {
+  display: none;
+}
+
+@media print {
+  a::after {
+    content: " (" attr(href) ") ";
+  }
+  a {
+    color: blue;
+  }
+}

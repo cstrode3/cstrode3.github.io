@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> CIS156 Validation</title>
+        <script type ="text/javascript">
+    function validate() {
+        var username = document.getElementById("uname");
+        var password = document.getElementById("pass");
+        if(username.value == "Michael" || password.value == "1234") {
+            return true;
+        }
+        else if(username.value == "" || password.value == "") {
+            alert("No blank values allowed");
+            return false;
+        }
+        else {
+            alert("Incorrect Login");
+            return false;
+        }
+    }
+    alert("This is an alert");
+    </script>
+    </head>
+<body>
+    <form onsubmit ="return validate()" action ="hello.html" >
+        <input id ="uname" placeholder="Username"
+        type="text"/><br><br>
+ 
+        <input id ="pass" placeholder="Password"
+        type="text"/><br><br>
+ 
+   <button type ="submit">Submit</button>
+    </form>
+</body>
+</html>

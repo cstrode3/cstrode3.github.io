@@ -1,1 +1,9 @@
 cstrode3.github.io
+
+To-DO:
+1. Add the personal projects to the folder that you made for them
+2. Maybe rethink the branding around your site
+3. Get the freaking computer logic page working
+4. Get the polyrhythms page working
+5. Write a readme for the Github repo
+6. Get a celabratoy icecream or something :)

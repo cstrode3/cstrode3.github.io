@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML Comment template -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My github Site</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <style>
+      /* CSS Comment template */
+    </style>
+    <script type="text/javascript">
+      function validate() {
+        let userChoice = document.getElementByName("userChoice");
+        console.log(userChoice);
+        switch (userChoice) {
+          case "Exercise 1" :
+            return true;
+            break;
+          case "Exercise 2" :
+            return true;
+            break;
+          case "Exercise 3" :
+            return true;
+            break;
+          case "Exercise 4" :
+            return true;
+            break;
+          case "Exercise 1" :
+            return true;
+            break;
+          default :
+            return false;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <form onsubmit="return validate()">
+        <h1>JavaScript Selector</h1>
+        <fieldset>
+          <legend>Select which JavaScript exrecise you would like to run</legend>
+          <input type="radio" id="exercise1" name="userChoice" value="Exercise 1">
+          <label for="exercise1">Exercise 1</label><br>
+          <input type="radio" id="exercise2" name="userChoice" value="Exercise 2">
+          <label for="exercise2">Exercise 2</label><br>
+          <input type="radio" id="exercise3" name="userChoice" value="Exercise 3">
+          <label for="exercise3">Exercise 3</label><br>
+          <input type="radio" id="exercise4" name="userChoice" value="Exercise 4">
+          <label for="exercise4">Exercise 4</label><br>
+          <input type="radio" id="exercise5" name="userChoice" value="Exercise 5">
+          <label for="exercise5">Exercise 5</label><br>
+          <input type="radio" id="exercise6" name="userChoice" value="Exercise 6">
+          <label for="exercise6">Exercise 6</label><br>
+          <input type="radio" id="exercise7" name="userChoice" value="Exercise 7">
+          <label for="exercise7">Exercise 7</label><br>
+          <input type="radio" id="exercise8" name="userChoice" value="Exercise 8">
+          <label for="exercise8">Exercise 8</label><br>
+          <input type="radio" id="exercise9" name="userChoice" value="Exercise 9">
+          <label for="exercise9">Exercise 9</label><br>
+          <input type="radio" id="none" name="userChoice" value="None">
+          <label for="none">None</label><br>
+        </fieldset>
+        <fieldset>
+          <legend>Select which JavaScript project you would like to run</legend>
+          <input type="radio" id="project1" name="userChoice" value="Project 1">
+          <label for="project1">Project 1</label><br>
+          <input type="radio" id="project2" name="userChoice" value="Project 2">
+          <label for="project2">Project 2</label><br>
+          <input type="radio" id="project3" name="userChoice" value="Project 3">
+          <label for="project3">Project 3</label><br>
+          <input type="radio" id="none" name="userChoice" value="None">
+          <label for="none">None</label><br>
+        </fieldset>
+        <fieldset>
+          <legend>Select which Misc JavaScript project you would like to run</legend>
+          <input type="radio" id="functions1" name="userChoice" value="Functions 1">
+          <label for="functions1">Functions 1</label><br>
+          <input type="radio" id="functions2" name="userChoice" value="Functions 2">
+          <label for="functions2">Functions 2</label><br>
+          <input type="radio" id="objects1" name="userChoice" value="Objects 1">
+          <label for="functions1">Objects 1</label><br>
+          <input type="radio" id="objects2" name="userChoice" value="Objects 2">
+          <label for="objects2">Objects 2</label><br>
+          <input type="radio" id="bubbleSort" name="userChoice" value="Bubble Sort">
+          <label for="bubbleSort">Bubble Sort</label><br>
+          <input type="radio" id="midterm" name="userChoice" value="Midterm">
+          <label for="midterm">Midterm</label><br>
+          <input type="radio" id="final" name="userChoice" value="Final">
+          <label for="final">Final</label><br>
+          <input type="radio" id="none" name="userChoice" value="None">
+          <label for="none">None</label><br>
+        </fieldset>
+        <br><input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </main>
+
+    <footer>
+      <span>&copy; 2023 Celestia Strode</span> <!-- Shows a copyright box at the bottom of the page -->
+    </footer>
+  </body>
+
+</html>

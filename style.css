@@ -1,33 +1,66 @@
 body {
   margin: 0px;
+  padding: 0px;
   background-image: linear-gradient(white, black); /* Creates a gradient that covers the entire page */
   height: 100%;
-   min-height: 100vh;
+   min-height: 100vh; /* Fixes view height to fit window */
   width: 100%;
    min-width: 600px;
 }
 main {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
+/* Specific elements */
+span {
+  width: 12em;
+  border: 1px solid black;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: lime;
+}
+
+/* Reusable classes */
+.center-box {
+  display: flex;
+  justify-content: center;
+}
+.master {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+.basic-shell {
+  background-color: black;
+  border: 1px solid lime;
+  border-radius: 1em;
+  padding: 2em;
+  width: 50vw;
+}
+.twin {
+  width: 45vw;
+}
+
+/* Formatting for explanation boxes */
 header, .bye {
   margin: 1vh 1vw;
+  padding: 10px;
   width: 65vw;
-  background-color: black; /* Gives the header a black background */
+  background-color: black; /* Gives the header black background */
   border: 3px solid lime; /* Creates a box around the header */
   border-radius: 15px; /* Rounds the edges of the header box */
-  padding: 10px; /* Prevents the contents of the header from contacting the headr box */
 }
 h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Sets the font of the largest header depending on what fonts the user has installed */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: transparent; /* Sets the the color of the header text to black */
-  -webkit-text-stroke: 1px lime; /* Gives the header text a lime border to make it visible */
-  margin: 0px; /* Moves the header text farther from the headerbox */
+  -webkit-text-stroke: 1px lime; /* Makes the header text visible with a border */
+  margin: 0px;
 }
 p {
-  font-family: 'Courier New', Courier, monospace; /* Sets the font of all paragraphs depending on what fonts the user has installed */
+  font-family: 'Courier New', Courier, monospace; /* Sets the font of all paragraphs to Courier */
   color: lime; /* Sets the color of the text in all the paragraphs to lime */
-  background-color: black; /* Sets the background color of all the paragraphs to black */;
+  background-color: black; /* Gives all paragraphs a black background */
 }
 hr {
   height: 5px; /* Sets the size of all horizontal lines */
@@ -36,9 +69,19 @@ hr {
 }
 
 
+/* The really confusing part */
 nav {
   position: sticky;
   text-align: center;
+}
+.nav-drop::before { /* Creates and formats logo in the navbar */
+  display: inline-block;
+  height: 3em;
+  width: 7em;
+  content: "";
+  background: url(/files/images/LLC-Wordmark.png) no-repeat;
+  filter: sepia(100%) saturate(1200%) brightness(900%) hue-rotate(42deg);
+  background-size: cover;
 }
 .nav-drop {
   display: flex;
@@ -48,15 +91,6 @@ nav {
   position: sticky;
   padding: 1em 2vw;
   display: block;
-}
-.nav-drop::before {
-  display: inline-block;
-  height: 3em;
-  width: 7em;
-  content: "";
-  background: url(/school/files/images/LLC-Wordmark.png) no-repeat;
-  filter: sepia(100%) saturate(1200%) brightness(900%) hue-rotate(42deg);
-  background-size: cover;
 }
 ul {
   padding: 0px;
@@ -75,27 +109,29 @@ li > p:hover {
   background-color: gray;
 }
 
+/* Still going */
 .menu > ul {
   display: none;
   position: absolute;
-  padding: 4px 0px 3px;
-  top: 50px;
+  padding: 16px 0px;
+  top: 54px;
 }
 .menu:hover > ul {
   display: flex;
-  padding: 4px 0px 3px;
 }
 
+/* There's a lot going on here ok */
 .sub {
   margin-top: -1.1vh;
 }
 #level2 {
-  padding-bottom: 0px;
-  top: 225%;
+  padding: 26px 0px 17px;
+  top: 105px;
 }
 .sub > ul {
   display: none;
   position: absolute;
+  top: 50px;
   width: max-content;
 }
 #codeDrawing {
@@ -120,8 +156,7 @@ li > p:hover {
 }
 .sub:hover > ul {
   display: block;
-  top: 200%;
-}
+} /* Now leaving the nav zone */
 
 
 ol {
@@ -134,6 +169,7 @@ ol {
     1px 1px 0 #000;
 }
 
+/* Formatting Links to stuff */
 a {
   text-decoration: none;
   color: lime;
@@ -156,6 +192,8 @@ a:hover {
 a:active {
   background-color: white;
 }
+
+/* Formatting preview windows */
 iframe {
   height: 30vh; /* Sets the height of all iframes */
   width: 60vw; /* Sets the width of all iframes */
@@ -176,7 +214,7 @@ iframe {
   border-radius: 15px; /* Rounds the edges of the iframe boxes */
   display: flex;
   margin: 2vh 0px;
-  }
+}
 
 
 /* Unit 10 Material */
@@ -218,7 +256,7 @@ tr:hover {
 #alternating tr:nth-child(even) {
   background-color: white;
 }
-.container {
+.container { /* Probably a problematic name that should be changed */
   padding: 3vh 0vw;
 }
 .container > a {
@@ -277,25 +315,19 @@ fieldset {
   height: 100vh;
   width: 100vw;
 }
-/* end polyrhythms css */
 
 
+/* About to finish with the basic formatting */
 footer {
   font-style: italic; /* Makes all footers italic */
   color: lime; /* Makes the text of all footers lime green */
-  border: 1px solid lime; /* Creates a green box around all footers */
-  margin: 10px; /* Moves footer box further away from surrounding elements */
+  border: 1px solid lime; /* Creates a green box around footers */
   border-radius: 3px; /* Rounnds the edges of all footer boxes */
   background-color: black; /* Makes all footer boxes black */
+  margin: 10px;
   padding: 5px;
 }
 /* footer > span:after {
   content: "I Don't Wanna Think About Toad's Dick";
   margin-left: 20px;
 } */
-
-@media only screen and (max-height: 700px) {
-  #level2 {
-    top: 215%;
-  }
-}
