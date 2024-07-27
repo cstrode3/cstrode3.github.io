@@ -10,13 +10,11 @@ body {
 main {
   margin-top: 2em;
   margin-bottom: 2em;
+  min-height: 55vh;
 }
 
 /* Specific elements */
-span {
-  width: 12em;
-  border: 1px solid black;
-  margin: 10px;
+h2 {
   font-family: 'Courier New', Courier, monospace;
   color: lime;
 }
@@ -27,16 +25,18 @@ span {
   justify-content: center;
 }
 .master {
-  display: flex;
   margin: auto;
+  display: flex;
   justify-content: space-around;
 }
 .basic-shell {
   background-color: black;
   border: 1px solid lime;
   border-radius: 1em;
-  padding: 2em;
-  width: 50vw;
+  text-align: center;
+  width: 75vw;
+  margin: auto;
+  padding-bottom: 2em;
 }
 .twin {
   width: 45vw;
@@ -114,18 +114,16 @@ li > p:hover {
   display: none;
   position: absolute;
   padding: 16px 0px;
-  top: 54px;
 }
 .menu:hover > ul {
   display: flex;
 }
 
 /* There's a lot going on here ok */
-.sub {
-  margin-top: -1.1vh;
+.level1 {
+  top: 54px;
 }
-#level2 {
-  padding: 26px 0px 17px;
+.level2 {
   top: 105px;
 }
 .sub > ul {
@@ -133,9 +131,6 @@ li > p:hover {
   position: absolute;
   top: 50px;
   width: max-content;
-}
-#codeDrawing {
-  left: 0%;
 }
 #U7 {
   right: 71%;

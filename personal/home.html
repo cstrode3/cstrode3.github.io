@@ -22,15 +22,40 @@
       <ul class="nav-drop">
         <li><a href="https://cstrode3.github.io/" class="surface">Home</a></li>
         <li class="menu">
-          <p>Projects</p>
-          <ul>
+          <a href="pure.js">Pure JavaScript</a>
+          <ul class="level1">
             <li><a href="polyrhythms/index.html">Polyrhythems</a></li>
+            <li><a href="transbianArcs/index.html">Transbian Arcs</a></li>
           </ul>
-          <ul id="level2">
+        </li>
+        <li class="menu">
+          <p>p5.js Sketches</p>
+          <ul class="level1">
+            <li><a href="p5/Biods/index.html">Biods</a></li>
+            <li><a href="p5/Pathfinding/index.html">Pathfinding</a></li>
+            <li><a href="p5/Raytracing/index.html">Raytracing</a></li>
+            <li><a href="p5/Shader/index.html">Shader</a></li>
+          </ul>
+          <ul class="level2">
             <li class="sub">
-              <a href="codeDrawing/">Drawing with Code</a>
-              <ul id="codeDrawing">
-                <li><a href="codeDrawing/transbianArcs/index.html">Transbian (JavaScript)</a></li>
+              <a href="p5/Physics/index.html">Physics</a>
+              <ul>
+                <li><a href="p5/Physics/Basic/index.html">Basic</a></li>
+                <li><a href="p5/Physics/Intermediate/index.html">Intermediate</a></li>
+                <li><a href="p5/Physics/Advanced/index.html">Advanced</a></li>
+                <li><a href="p5/Physics/Angular/index.html">Angular</a></li>
+                <li><a href="p5/Physics/BlackHole/index.html">Black Hole</a></li>
+                <li><a href="p5/Physics/Deflection/index.html">Deflection</a></li>
+              </ul>
+            </li>
+            <li class="sub">
+              <a href="p5/Squares/index.html">Marching Squares Research</a>
+              <ul>
+                <li><a href="p5/Squares/Hub/index.html">Research Hub</a></li>
+                <li><a href="p5/Squares/Squares/index.html">Marching Squares</a></li>
+                <li><a href="p5/Squares/SmoothedSquares/index.html">Smoothed Squares</a></li>
+                <li><a href="p5/Squares/MetaBalls/index.html">Metaballs</a></li>
+                <li><a href="p5/Squares/SmoothedBalls/index.html">Smoothed Metaballs</a></li>
               </ul>
             </li>
           </ul>
@@ -38,15 +63,17 @@
       </ul>
     </nav>
     
-    <main> <!-- Defines the main content of the page -->
-      <ol> <!-- Formats all the links into an ordered list -->
-        <li class="window">
-          <a href="polyrhythms/index.html">Polyrhythms</a><br>
-          <iframe src="polyrhythms/index.html" name="Polyrhythms" title="Polyrhythms" class="viewBox"></iframe></li>
-        <li class="window">
-          <a href="codeDrawing/transbianArcs/index.html">Transbian Arcs</a><br>
-          <iframe src="codeDrawing/transbianArcs/index.html" name="Transbian Arcs" title="Transbian Arcs" class="viewBox"></iframe></li>
-      </ol>
+    <main>
+      <div class="master">
+        <div>
+          <a href="pure.js/index.html">Pure JavaScript</a><br>
+          <iframe src="pure.js/index.html" class="twin"></iframe>
+        </div>
+        <div>
+          <a href="p5/sketchbook.html">p5.js Sketches</a><br>
+          <iframe src="p5/sketchbook.html" class="twin"></iframe>
+        </div>
+      </div>
     </main>
     
     <footer>
